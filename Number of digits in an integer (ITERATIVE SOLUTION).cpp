@@ -19,3 +19,6 @@ int main(){
     cout<<countDigit(num);
 }
 
+// Time complexity = O(log n + 1) = O(log n)
+//              or = O(d)
+
