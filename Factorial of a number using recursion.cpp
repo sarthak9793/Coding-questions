@@ -1,4 +1,4 @@
-//                                                  Factorial of a number using recursion
+//                                                  Factorial of a number (recursive solution)
 
 #include<iostream>
 using namespace std;
@@ -20,3 +20,4 @@ int main(){
 
 // Time complexity is T(n) = T(n-1) + c
 // Calculate using recursive tree method = O(n)
+
