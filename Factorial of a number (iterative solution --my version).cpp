@@ -5,7 +5,7 @@ using namespace std;
 
 int factorial(int num){
     int fact = num;
-    if (num==0)
+    if(num==0 || num==1)
         return 1;
     while(num>1){
         fact =  fact * (num-1);
@@ -22,3 +22,5 @@ int main(){
     cout<<"The factorial is: "<<factorial(num);
     
 }
+// Time complexity = O(n)
+
