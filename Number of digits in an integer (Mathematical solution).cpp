@@ -20,3 +20,4 @@ int main(){
     cout<<countDigit(num);
 }
 
+// Time complexity = O(1)
