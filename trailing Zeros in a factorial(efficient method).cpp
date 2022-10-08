@@ -7,6 +7,7 @@
    How to count the total number of 5s in prime factors of n!? A simple way is to calculate floor(n/5). For example, 7! has one 5, 10! has two 5s. It is not done yet, 
    there is one more thing to consider. Numbers like 25, 125, etc have more than one 5. For example, if we consider 28! we get one extra 5 and the 
    number of 0s becomes 6. Handling this is simple, first, divide n by 5 and remove all single 5s, then divide by 25 to remove extra 5s, and so on. 
+                Trailing 0s in n! = floor(n/5) + floor(n/25) + floor(n/125) + .... as long as num >= denominator(i.e. power of 5's)
 */
 // TBH I don't get it, but it's simple enough to remember
 #include<iostream>
@@ -27,5 +28,6 @@ int main(){
     
     cout<<"Number of trailing zeros in a factorial are: "<<trailingZeros(num);
 }
-// time complexity is 0(logn)
+// time complexity is O(logn)
+
 
