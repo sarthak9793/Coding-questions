@@ -18,3 +18,5 @@ int main(){
     
 }
 
+// Time complexity  = O(log n)
+
