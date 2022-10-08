@@ -1,5 +1,5 @@
-//                                                              Program to reverse an integer
-// unnecessarily complex but my solution(also iterative)
+//                                                              Program to reverse an integer (iterative solution --my solution)
+// unnecessarily complex but my solution
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -39,5 +39,3 @@ int main(){
         cout<<"Reverse is: "<<reverse(num);
     
 }
-
-
