@@ -1,4 +1,4 @@
-//                                                              Program to reverse an integer
+//                                                              Program to reverse an integer(recursive solution)
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -26,4 +26,5 @@ int main(){
     
     cout<<"Reverse is: "<<reverse(num);
 }
+
 
