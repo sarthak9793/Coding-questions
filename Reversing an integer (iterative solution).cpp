@@ -1,4 +1,4 @@
-//                                                              Program to reverse an integer
+//                                                              Program to reverse an integer (iterative solution)
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -19,4 +19,7 @@ int main(){
     
     cout<<"Reverse is: "<<reverse(num);
 }
+
+// Time complexity = O(d)
+
 
