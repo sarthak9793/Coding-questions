@@ -29,4 +29,6 @@ int main(){
     
 }
 
+// Time complexity  = O(floor(d/2)) = O(d)
+
 
