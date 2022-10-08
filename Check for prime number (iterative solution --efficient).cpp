@@ -3,9 +3,9 @@
     30: (1,30), (2,15), (3,10), (5,6)
     65: (1,65), (5,13)
    So if (x,y) is a pair such that x*y = num
-      and if x<=y
-            x*x <= num
-            x <= sqrt(num)
+      and if x<=y(x is the smaller element)
+            then    x*x <= num
+                    x <= sqrt(num)
    Eureka Moment: 1 <---------> sqrt(num) is the range of smaller divisors in the pairs
 */
 
@@ -34,3 +34,4 @@ int main(){
 }
 
 // Time complexity = O(sqrt(n))
+
