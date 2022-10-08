@@ -5,8 +5,7 @@
 #include<iostream>
 using namespace std;
 
-long int
-factorial (int num)
+long int factorial (int num)
 {
   long int fact = 1;
   if (num <= 1)
@@ -14,23 +13,22 @@ factorial (int num)
   for (int i = 2; i <= num; i++)
     {
       fact *= i;
-    } //time complexity is 0(n)
+    } //time complexity = O(n)
   return fact;
 }
 
-int
-trailingZeros (int num)
+int trailingZeros (int num)
 {
   long int fact = factorial (num);
   int count = 0;
   while (fact != 0)
     {
       if (fact % 10 != 0)
-	return count;
+	    return count;
       if (fact % 10 == 0)
-	count++;
+	    count++;
       fact = fact / 10;
-    } //time complexity is less than 0(n)
+    } //time complexity = O(log n)
   return count;
 }
 
@@ -43,6 +41,4 @@ int main ()
   cout << "Number of trailing zeros in a factorial are: " <<
     trailingZeros (num);
 }
-// Overall time complexity is 0(n)
-
-
+// Overall time complexity is O(n) + O(log n) = O(n + log n) = O(n)
