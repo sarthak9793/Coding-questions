@@ -3,18 +3,19 @@
 using namespace std;
 
 int lcm(int a, int b){
-    // We (should) know that the lcm of two number is greater than or equal to the max of two numbers
+    // We (should) know that the lcm of two number is greater than or equal to the max of two numbers and at max lcm = a*b
+    
     int lcm = max(a,b);
     
-    if(max(a,b) == 0)//This line is exclusively to deal when either a or b is zero
+    if(min(a,b) == 0)//This line is exclusively to deal when either a or b is zero
         return 0;
     
     while(true){
         if(lcm%a == 0 && lcm%b == 0)
-            return lcm;
+            break;
         lcm++;
     }
-    return lcm; //control will never reach here, as while(true) is an infinite loop. The function will return from inside the loop itself
+    return lcm;
 }
 
 int main(){
@@ -29,3 +30,4 @@ int main(){
     
 }
 // Time complexity is O(a*b), to be more precise O((a*b)-max(a,b))
+
